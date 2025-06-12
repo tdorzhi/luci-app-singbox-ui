@@ -1,4 +1,4 @@
-FROM openwrt/sdk:x86_64-v23.05.5
+FROM openwrt/sdk:x86_64-v24.10.1
 
 RUN ./scripts/feeds update -a && ./scripts/feeds install luci-base && mkdir -p /builder/package/feeds/utilites/ && mkdir -p /builder/package/feeds/luci/
 

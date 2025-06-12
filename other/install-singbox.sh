@@ -48,7 +48,7 @@ header
 
 # Обновление репозиториев и установка зависимостей
 show_progress "Обновление пакетов и установка зависимостей..."
-opkg update && opkg install openssh-sftp-server nano curl jq
+opkg update && opkg install nano curl jq
 [ $? -eq 0 ] && show_success "Зависимости успешно установлены" || show_error "Ошибка установки зависимостей"
 separator
 
