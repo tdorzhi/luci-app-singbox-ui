@@ -1,8 +1,8 @@
 name: Build packages
 on:
   push:
-    tags:
-      - v*
+    branches:
+      - main
 
 jobs:
   build:
