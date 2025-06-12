@@ -27,8 +27,8 @@ jobs:
       - name: Filter IPK files
         run: |
           # Извлекаем версию из тега, убирая префикс 'v'
-          VERSION=${GITHUB_REF#refs/tags/v}
-
+          # VERSION=${GITHUB_REF#refs/tags/v}
+          VERSION=1.0
           mkdir -p ./filtered-bin
           cp ./bin/luci-app-singbox-ui*.ipk ./filtered-bin/luci-app-singbox-ui.ipk
 
